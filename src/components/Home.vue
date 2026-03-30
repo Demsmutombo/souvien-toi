@@ -184,7 +184,7 @@
               </div>
             </div>
             <div class="flex items-start space-x-4">
-              <div class="bg-primary text-white px-4 py-2 rounded-lg font-bold text-lg min-w-[80px] text-center">2020</div>
+              <div class="bg-primary text-white px-4 py-2 rounded-lg font-bold text-lg min-w-[80px] text-center">2026</div>
               <div class="bg-white p-4 rounded-lg shadow-lg flex-1">
                 <h3 class="font-bold text-lg mb-2">Innovation</h3>
                 <p class="text-gray-600">Lancement de notre plateforme de culte en ligne</p>

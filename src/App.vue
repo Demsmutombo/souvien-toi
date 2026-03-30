@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-50">
+  <div id="app" class="bg-plume-light font-serif">
     <Loader :isLoading="isLoading && !isMemoirePage" />
     <Navbar v-show="!isLoading" />
     <router-view />

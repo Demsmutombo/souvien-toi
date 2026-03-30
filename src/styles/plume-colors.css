@@ -1,0 +1,213 @@
+/* 🎨 Palette de Couleurs Plume d'Histoire - Global */
+
+/* Variables de couleurs principales */
+:root {
+  --plume-gold-primary: #B8860B;
+  --plume-gold-light: #D4A017;
+  --plume-gold-accent: #F4E4C1;
+  --plume-blue-dark: #1e3a5f;
+  --plume-blue-primary: #2563eb;
+  --plume-blue-hover: #1d4ed8;
+  --plume-burgundy: #8B4513;
+  --plume-burgundy-light: #A0522D;
+  --plume-gray-secondary: #64748b;
+  --plume-gray-light: #f8fafc;
+  --plume-gray-border: #e2e8f0;
+  --plume-white: #ffffff;
+  --plume-gray-divider: #cbd5e1;
+  --plume-text-primary: #1e293b;
+  --plume-text-secondary: #475569;
+}
+
+/* Classes de badges pour timeline */
+.badge-1909 {
+  background-color: var(--plume-gold-accent);
+  color: var(--plume-gold-primary);
+}
+
+.badge-1950 {
+  background-color: var(--plume-gold-accent);
+  color: var(--plume-gold-primary);
+}
+
+.badge-1965 {
+  background-color: var(--plume-burgundy-light);
+  color: var(--plume-white);
+}
+
+/* Classes utilitaires */
+.text-plume-dark {
+  color: var(--plume-blue-dark);
+}
+
+.text-plume-primary {
+  color: var(--plume-blue-primary);
+}
+
+.text-plume-secondary {
+  color: var(--plume-gray-secondary);
+}
+
+.text-plume-accent {
+  color: var(--plume-gold-primary);
+}
+
+.text-plume-gold {
+  color: var(--plume-gold-primary);
+}
+
+.text-plume-burgundy {
+  color: var(--plume-burgundy);
+}
+
+.bg-plume-white {
+  background-color: var(--plume-white);
+}
+
+.bg-plume-light {
+  background-color: var(--plume-gray-light);
+}
+
+.bg-plume-primary {
+  background-color: var(--plume-blue-primary);
+}
+
+.bg-plume-dark {
+  background-color: var(--plume-blue-dark);
+}
+
+.bg-plume-accent {
+  background-color: var(--plume-gold-primary);
+}
+
+.bg-plume-gold {
+  background-color: var(--plume-gold-primary);
+}
+
+.bg-plume-burgundy {
+  background-color: var(--plume-burgundy);
+}
+
+.border-plume {
+  border-color: var(--plume-gray-border);
+}
+
+/* Logo theme colors */
+.logo-primary {
+  color: var(--plume-gold-primary);
+}
+
+.logo-accent {
+  color: var(--plume-gold-light);
+}
+
+.logo-text {
+  color: var(--plume-blue-dark);
+}
+
+.logo-subtitle {
+  color: var(--plume-gray-secondary);
+}
+
+/* Boutons Plume d'Histoire */
+.btn-plume {
+  background: var(--plume-gold-primary);
+  color: var(--plume-white);
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn-plume:hover {
+  background: var(--plume-gold-light);
+}
+
+.btn-plume-secondary {
+  background: transparent;
+  color: var(--plume-gold-primary);
+  border: 2px solid var(--plume-gold-primary);
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-plume-secondary:hover {
+  background: var(--plume-gold-primary);
+  color: var(--plume-white);
+}
+
+/* Cards Plume d'Histoire */
+.card-plume {
+  background: var(--plume-white);
+  border: 1px solid var(--plume-gray-border);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-plume:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Navigation Plume d'Histoire */
+.nav-plume {
+  background: var(--plume-white);
+  border-bottom: 2px solid var(--plume-blue-dark);
+}
+
+.nav-item-plume {
+  color: var(--plume-blue-dark);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-right: 1px solid var(--plume-gray-divider);
+  transition: color 0.3s ease;
+}
+
+.nav-item-plume:hover {
+  color: var(--plume-blue-primary);
+}
+
+/* Hero Plume d'Histoire */
+.hero-plume {
+  background: linear-gradient(135deg, var(--plume-gray-light) 0%, #e9ecef 100%);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* Sections Plume d'Histoire */
+.section-plume {
+  padding: 4rem 0;
+  background: var(--plume-white);
+}
+
+/* Typography Plume d'Histoire */
+.title-plume {
+  color: var(--plume-blue-dark);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.subtitle-plume {
+  color: var(--plume-gray-secondary);
+  line-height: 1.6;
+}
+
+.card-title-plume {
+  color: var(--plume-blue-dark);
+  font-weight: 600;
+}
+
+.card-text-plume {
+  color: var(--plume-gray-secondary);
+  line-height: 1.6;
+}

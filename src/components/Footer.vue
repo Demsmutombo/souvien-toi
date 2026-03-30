@@ -1,129 +1,98 @@
 <template>
-  <footer class="bg-gray-900 text-white py-12 sm:py-16">
-    <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
-        <!-- À Propos de Souviens-Toi -->
-        <div>
-          <div class="flex items-center mb-6">
-            <div class="w-12 h-12 mr-3">
-              <img src="/souv.png" alt="Souviens-Toi" class="w-full h-full object-contain">
-            </div>
-            <h3 class="text-2xl font-light">Souviens-Toi</h3>
-          </div>
-          <p class="text-gray-300 mb-6 leading-relaxed">
-            Une plateforme où la mémoire devient éternité. 
-            Nous préservons les récits sacrés, les témoignages vivants 
-            et les vérités intemporelles pour les générations à venir.
-          </p>
-          <div class="space-y-3">
-            <div class="flex items-center text-gray-400">
-              <i class="fas fa-clock text-primary mr-3"></i>
-              <span class="text-sm">1909 - Temps Présent</span>
-            </div>
-            <div class="flex items-center text-gray-400">
-              <i class="fas fa-globe text-primary mr-3"></i>
-              <span class="text-sm">60 Pays Touchés</span>
-            </div>
-            <div class="flex items-center text-gray-400">
-              <i class="fas fa-book text-primary mr-3"></i>
-              <span class="text-sm">1209 Messages Préservés</span>
-            </div>
-          </div>
+  <footer class="bg-primary-bordeaux text-white">
+    <!-- Main Footer Content -->
+    <div class="container mx-auto px-4 py-12">
+      <div class="max-w-6xl mx-auto">
+        <!-- Logo centré au-dessus -->
+        <div class="text-center mb-8">
+          <img src="/souv.png" alt="Souviens-Toi Logo" class="w-16 h-16 mx-auto rounded-full shadow-lg border-3 border-white/30">
         </div>
         
-        <!-- Navigation Rapide -->
-        <div>
-          <h3 class="text-xl font-light mb-6 text-primary">Explorer la Mémoire</h3>
-          <div class="flex flex-col space-y-3">
-            <router-link to="/" class="text-gray-300 hover:text-white transition-colors flex items-center group">
-              <i class="fas fa-home text-primary mr-3 w-5 text-center"></i>
-              <span class="group-hover:translate-x-1 transition-transform">Accueil</span>
-            </router-link>
-            <router-link to="/histoire" class="text-gray-300 hover:text-white transition-colors flex items-center group">
-              <i class="fas fa-clock text-primary mr-3 w-5 text-center"></i>
-              <span class="group-hover:translate-x-1 transition-transform">Histoire Sacrée</span>
-            </router-link>
-            <router-link to="/voix" class="text-gray-300 hover:text-white transition-colors flex items-center group">
-              <i class="fas fa-microphone text-primary mr-3 w-5 text-center"></i>
-              <span class="group-hover:translate-x-1 transition-transform">Voix du Temps</span>
-            </router-link>
-            <router-link to="/message" class="text-gray-300 hover:text-white transition-colors flex items-center group">
-              <i class="fas fa-book-open text-primary mr-3 w-5 text-center"></i>
-              <span class="group-hover:translate-x-1 transition-transform">Message Éternel</span>
-            </router-link>
-            <router-link to="/memoire" class="text-gray-300 hover:text-white transition-colors flex items-center group">
-              <i class="fas fa-images text-primary mr-3 w-5 text-center"></i>
-              <span class="group-hover:translate-x-1 transition-transform">Galerie Mémoire</span>
-            </router-link>
-          </div>
-        </div>
-        
-        <!-- Ressources & Contact -->
-        <div>
-          <h3 class="text-xl font-light mb-6 text-primary">Ressources & Contact</h3>
-          <div class="space-y-4">
-            <div class="bg-gray-800 p-4 rounded-lg">
-              <h4 class="text-sm font-light text-primary mb-2">Shekinah Publications</h4>
-              <p class="text-gray-300 text-sm leading-relaxed">
-                Gardien du Message depuis 1990. 
-                40M+ de brochures distribuées dans le monde entier.
-              </p>
-            </div>
-            
-            <div class="space-y-3">
-              <div class="flex items-center text-gray-300">
-                <i class="fas fa-envelope text-primary mr-3"></i>
-                <span class="text-sm">memoire@souviens-toi.org</span>
-              </div>
-              <div class="flex items-center text-gray-300">
-                <i class="fas fa-map-marker-alt text-primary mr-3"></i>
-                <span class="text-sm">Kinshasa, RDC</span>
-              </div>
-              <div class="flex items-center text-gray-300">
-                <i class="fas fa-globe-americas text-primary mr-3"></i>
-                <span class="text-sm">Églises Sœurs Mondiales</span>
-              </div>
-            </div>
-            
-            <div class="pt-4 border-t border-gray-700">
-              <p class="text-gray-400 text-sm italic">
-                "Car la mémoire est le gardien de la vérité, 
-                et la vérité est la lumière de l'humanité."
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Footer Bottom -->
-      <div class="border-t border-gray-700 mt-12 pt-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="text-center md:text-left">
-            <p class="text-gray-400 text-sm">
-              © {{ currentYear }} 
-              <span class="text-white font-light">Souviens-Toi</span>. 
-              Plateforme de Mémoire Spirituelle.
+        <!-- Tout sur une seule ligne -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 text-center items-start">
+          
+          <!-- Brand -->
+          <div class="text-center">
+            <h4 class="text-lg md:text-xl font-serif font-bold mb-2 text-yellow-200 leading-tight">
+              Souviens-Toi
+            </h4>
+            <p class="text-xs md:text-sm text-gray-200 mb-3 leading-relaxed">
+              La mémoire qui élève l'âme
             </p>
+            
+            <!-- Copyright -->
+            <div class="text-xs text-gray-300 leading-relaxed mt-4">
+              <p>© 2026 Souviens-Toi</p>
+              <p>Tous droits réservés</p>
+              <p>Plateforme de Mémoire Spirituelle</p>
+            </div>
           </div>
-          <div class="text-center md:text-right">
-            <p class="text-gray-400 text-sm">
-              Érigé avec <i class="fas fa-heart text-red-500"></i> 
-              pour la préservation de la mémoire sacrée
-            </p>
+          
+          <!-- Navigation -->
+          <div class="text-center">
+            <h5 class="font-semibold mb-2 md:mb-3 text-yellow-200 text-sm md:text-base">Navigation</h5>
+            <ul class="space-y-1 text-xs md:text-sm">
+              <li>
+                <router-link to="/histoire" class="hover:text-yellow-200 transition-colors">
+                  Histoire
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/voix" class="hover:text-yellow-200 transition-colors">
+                  Voix
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/message" class="hover:text-yellow-200 transition-colors">
+                  Message
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/memoire" class="hover:text-yellow-200 transition-colors">
+                  Mémoire
+                </router-link>
+              </li>
+            </ul>
           </div>
+          
+          <!-- Thèmes spirituels -->
+          <div class="text-center">
+            <h5 class="font-semibold mb-2 md:mb-3 text-yellow-200 text-sm md:text-base">Thèmes spirituels</h5>
+            <ul class="space-y-1 text-xs md:text-sm">
+              <li>
+                <router-link to="/histoire" class="hover:text-yellow-200 transition-colors">
+                  Voyage temporel
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/voix" class="hover:text-yellow-200 transition-colors">
+                  Témoignages vivants
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/message" class="hover:text-yellow-200 transition-colors">
+                  Enseignements sacrés
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/memoire" class="hover:text-yellow-200 transition-colors">
+                  Archives spirituelles
+                </router-link>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Espace vide pour équilibre -->
+          <div>
+            <!-- Colonne vide pour équilibrer le design -->
+          </div>
+          
         </div>
       </div>
     </div>
   </footer>
 </template>
 
-<script>
-export default {
-  name: 'Footer',
-  computed: {
-    currentYear() {
-      return new Date().getFullYear()
-    }
-  }
-}
+<script setup>
+// No additional logic needed for this static component
 </script>

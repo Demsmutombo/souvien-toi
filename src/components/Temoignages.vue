@@ -314,7 +314,7 @@ export default {
         {
           id: 1,
           name: 'Jean Martin',
-          date: 'Janvier 2024',
+          date: 'Janvier 2026',
           content: 'J\'étais arrivé ici le cœur brisé, ma foi réduite en cendres. Les épreuves de la vie m\'avaient éloigné de Dieu, et je me sentais seul dans mes ténèbres. Mais ce jour-là, alors que je m\'assis au fond de l\'assemblée, quelque chose commença à changer. La Parole prononcée avec tant d\'onction atteignit mon âme assoiffée. Chaque parole était comme une goutte d\'eau sur une terre sèche. Lentement, la lumière commença à percer mes nuages. Aujourd\'hui, je peux dire avec larmes de joie que je suis né de nouveau. Cette église ne m\'a pas seulement donné des enseignements, elle m\'a rendu ma dignité, ma famille spirituelle, et surtout ma relation avec Dieu.',
           icon: 'fas fa-heart',
           emotion: 'Restauration',
@@ -323,7 +323,7 @@ export default {
         {
           id: 2,
           name: 'Sophie Laurent',
-          date: 'Décembre 2023',
+          date: 'Décembre 2025',
           content: 'Il y a cinq ans, je traversais une vallée sombre. Le divorce venait de briser mon mariage, mes enfants souffraient, et ma prière semblait ne jamais dépasser le plafond. Une amie m\'a amenée ici, à contre-cœur. La première chose que j\'ai ressentie, ce n\'était pas le jugement, mais l\'amour. Des inconnus sont venus me serrer la main, prier avec moi, pleurer avec moi. Dans les groupes de prière du mercredi, j\'ai appris à déposer mes fardeaux aux pieds de Jésus. Dieu m\'a guérie intérieurement. Il a restauré mon cœur brisé, et mes enfants ont retrouvé la paix. Aujourd\'hui, je ne suis plus la victime de mes circonstances, mais une survivante victorieuse par la grâce de Dieu.',
           icon: 'fas fa-dove',
           emotion: 'Guérison',
@@ -332,7 +332,7 @@ export default {
         {
           id: 3,
           name: 'Pierre Bernard',
-          date: 'Novembre 2023',
+          date: 'Novembre 2025',
           content: 'Comme beaucoup de pères, je m\'inquiétais pour l\'avenir spirituel de mes enfants dans ce monde si trouble. J\'avais tout essayé : écoles chrétiennes, cours bibliques, mais rien ne semblait toucher leurs cœurs. Puis nous avons découvert cette église. La première chose qui m\'a frappé, c\'est l\'amour authentique que les enfants reçoivent ici. Ils ne sont pas considérés comme des adultes en miniature, mais comme des âmes précieuses que Dieu aime. Mes enfants, qui détestaient aller à l\'église, demandent maintenant quand nous pouvons y retourner. Ils apprennent les Écritures avec joie, ils prient avec sincérité, et je vois leurs vies se transformer. Dieu m\'a donné ici plus qu\'une église : Il m\'a donné une famille spirituelle pour mes enfants.',
           icon: 'fas fa-child',
           emotion: 'Espoir',
@@ -341,7 +341,7 @@ export default {
         {
           id: 4,
           name: 'Claire Dubois',
-          date: 'Octobre 2023',
+          date: 'Octobre 2025',
           content: 'À 19 ans, je me sentais perdue. L\'université, les pressions sociales, les questions existentielles - tout semblait me pousser loin de mes racines chrétiennes. J\'ai failli abandonner ma foi. Puis un jour, une camarade m\'a invitée à un groupe de jeunes ici. Ce que j\'ai découvert m\'a surprise : ce n\'était pas un groupe de "jeunes religieux", mais une famille de personnes authentiques qui luttaient comme moi. Nous partagions nos doutes, nos peurs, mais aussi nos victoires. Dans cette authenticité, ma foi a trouvé un terrain solide. Aujourd\'hui, je ne suis plus seulement une croyante par tradition, mais une disciple par conviction. J\'ai trouvé ici des amis qui m\'élèvent spirituellement, et une foi qui résiste aux tempêtes de la vie.',
           icon: 'fas fa-graduation-cap',
           emotion: 'Transformation',
@@ -350,7 +350,7 @@ export default {
         {
           id: 5,
           name: 'Michel Petit',
-          date: 'Septembre 2023',
+          date: 'Septembre 2025',
           content: 'Pendant des années, j\'ai fréquenté des églises où tout était rituel et routine. Ma foi était intellectuelle, mais mon cœur restait froid. Puis je suis entré ici un dimanche matin. La première chose qui m\'a atteint, ce n\'était pas le sermon, mais l\'adoration. Quand les chants ont commencé, j\'ai senti quelque chose se briser à l\'intérieur. Pour la première fois, je ne chantais pas seulement des paroles, je les vivais. La présence de Dieu est devenue si réelle, si tangible. Les larmes coulaient sur mes joues alors que le Saint-Esprit me visitait. Ce jour-là, mon christianisme est passé de la religion à la relation. Aujourd\'hui, chaque culte est une rencontre vivante avec Dieu, et je ne peux plus imaginer vivre sans cette intimité divine.',
           icon: 'fas fa-music',
           emotion: 'Révélation',
@@ -359,7 +359,7 @@ export default {
         {
           id: 6,
           name: 'Isabelle Rousseau',
-          date: 'Août 2023',
+          date: 'Août 2025',
           content: 'Le diagnostic est tombé comme un coup de tonnerre : cancer. Le monde s\'effondrait autour de moi. Mais ce qui m\'a le plus marqué pendant cette épreuve, ce n\'a pas été la maladie, mais l\'amour de cette communauté. Chaque jour, des visites, des appels, des prières. Des frères et sœurs qui veillaient avec moi dans les nuits sombres. Ils ne m\'ont pas seulement donné de la nourriture ou des rides, ils m\'ont donné leur foi quand la mienne vacillait. Ils m\'ont rappelé les promesses de Dieu quand mes doutes assaillaient. Aujourd\'ui, je suis en rémission, mais plus que la guérison physique, j\'ai reçu la guérison de l\'âme. Cette église n\'est pas une organisation, c\'est vraiment le corps de Christ en action.',
           icon: 'fas fa-hands-helping',
           emotion: 'Soutien',

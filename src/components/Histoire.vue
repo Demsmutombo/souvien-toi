@@ -181,7 +181,7 @@ export default {
         },
         {
           id: 6,
-          year: '2020',
+          year: '2026',
           title: '25 Ans',
           description: 'Célébration de nos 25 ans de ministère et d\'impact communautaire.',
           icon: 'fas fa-award'

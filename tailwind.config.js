@@ -7,16 +7,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#1A237E',
-        secondary: '#FFD600',
-        light: '#FFFFFF',
-        dark: '#1A237E',
-        'dark': '#212529',
+        primary: {
+          gold: '#D4AF37',
+          ocre: '#B89F5F',
+          bordeaux: '#8B3A50',
+        },
+        text: {
+          main: '#2C2C2C',
+          secondary: '#666666',
+        },
+        bg: {
+          cream: '#FFF8F0',
+        }
       },
       fontFamily: {
-        'jost': ['Jost', 'sans-serif'],
-        'open-sans': ['Open Sans', 'sans-serif'],
-      }
+        serif: ['Playfair Display', 'serif'],
+        sans: ['Open Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],

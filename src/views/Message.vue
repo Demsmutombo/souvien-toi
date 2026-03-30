@@ -1,190 +1,210 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <!-- Hero Section -->
-    <section class="relative h-96 bg-gradient-to-r from-primary to-primary/80 flex items-center justify-center">
-      <div class="absolute inset-0 bg-black/20"></div>
-      <div class="relative text-center text-white px-6">
-        <h1 class="text-4xl lg:text-6xl font-light mb-4">Message</h1>
-        <p class="text-xl lg:text-2xl opacity-90">Les vérités éternelles pour notre temps</p>
+  <div class="min-h-screen bg-bg-cream">
+    <Navbar />
+    
+    <!-- Hero Section - Design Souviens-Toi -->
+    <section class="relative bg-gradient-to-br from-primary-bordeaux to-primary-gold text-white overflow-hidden">
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="relative container mx-auto px-4 py-20 lg:py-32">
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
+            Message<br>
+            <span class="text-yellow-200">La Sagesse Éternelle</span>
+          </h1>
+          <div class="text-2xl md:text-3xl font-serif mb-8 text-yellow-100">
+            Les vérités intemporelles pour notre génération
+          </div>
+          <p class="text-lg md:text-xl mb-12 text-gray-100 leading-relaxed max-w-4xl mx-auto">
+            Dans un monde de changements constants, les enseignements fondamentaux 
+            de la Parole de Dieu demeurent l'ancre inébranlable pour notre foi.
+          </p>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg class="w-full h-12 text-bg-cream" viewBox="0 0 1440 48" fill="currentColor">
+          <path d="M0,32 C120,42 240,18 360,24 C480,30 600,42 720,36 C840,30 960,18 1080,24 C1200,30 1320,42 1440,32 L1440,48 L0,48 Z"/>
+        </svg>
       </div>
     </section>
 
     <!-- Introduction -->
-    <section class="py-16">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl lg:text-4xl font-light text-gray-900 mb-8">
-          L'héritage de la vérité
-        </h2>
-        <p class="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-          Dans un monde de changements constants, les enseignements fondamentaux 
-          de la Parole de Dieu demeurent l'ancre inébranlable pour notre foi.
-        </p>
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6 text-primary-gold">
+            Les Fondements Spirituels
+          </h2>
+          <div class="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+            Les principes divins qui guident nos vies et façonnent notre foi
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Message -->
+    <section class="py-20 bg-bg-cream">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6 text-primary-gold">
+            Message du Temps Présent
+          </h2>
+          <div class="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+            Une parole vivante pour notre génération
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-lg p-8 shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-primary-gold rounded-full flex items-center justify-center text-white font-bold mr-4">
+                <i class="fas fa-dove"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-serif font-bold text-primary-gold">La Révélation du Temps de la Fin</h3>
+                <p class="text-text-secondary">Une compréhension profonde du plan divin</p>
+              </div>
+            </div>
+            <p class="text-gray-700 leading-relaxed mb-6">
+              Nous vivons dans une époque unique où les prophéties bibliques s'accomplissent 
+              sous nos yeux. Le Message du temps de la fin nous donne la compréhension 
+              nécessaire pour discerner les signes des temps et nous préparer pour le retour 
+              imminent de notre Seigneur Jésus-Christ.
+            </p>
+            <div class="bg-primary-gold/10 rounded-lg p-4">
+              <p class="text-primary-gold font-semibold mb-2">Écriture clé</p>
+              <p class="text-gray-700 italic">
+                "Soyez donc vigilants, car vous ne savez ni le jour, ni l'heure." - Matthieu 25:13
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Core Principles -->
-    <section class="py-16 bg-white">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <h3 class="text-2xl font-light text-gray-900 mb-4">
-            Les piliers de notre foi
-          </h3>
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6 text-primary-gold">
+            Les Piliers de la Foi
+          </h2>
+          <div class="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+            Les vérités fondamentales qui soutiennent notre vie spirituelle
+          </p>
         </div>
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Pillar 1 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+          <!-- Principle 1 -->
+          <div class="bg-bg-cream rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
             <div class="text-center mb-4">
-              <div class="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                <i class="fas fa-crown text-primary"></i>
+              <div class="w-16 h-16 bg-primary-gold rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <i class="fas fa-cross text-2xl"></i>
               </div>
-              <h4 class="text-lg font-light text-primary mb-2">La Seigneurie de Christ</h4>
+              <h3 class="text-xl font-serif font-bold text-primary-gold mb-2">Le Salut par la Foi</h3>
             </div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Jésus-Christ est la Divinité suprême, le seul vrai Dieu fait chair.
+            <p class="text-gray-700 mb-4">
+              La foi en Jésus-Christ comme seul moyen de salut, par grâce et non par les œuvres.
             </p>
-            <div class="text-xs text-gray-500">
-              <p class="font-semibold">Jean 1:1, 14</p>
-              <p>Fondement du salut et de l'adoration</p>
-            </div>
-          </div>
-
-          <!-- Pillar 2 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-            <div class="text-center mb-4">
-              <div class="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                <i class="fas fa-cross text-primary"></i>
-              </div>
-              <h4 class="text-lg font-light text-primary mb-2">Le Salut par la Foi</h4>
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Uniquement par la foi personnelle en Jésus-Christ, non par nos œuvres.
-            </p>
-            <div class="text-xs text-gray-500">
-              <p class="font-semibold">Éphésiens 2:8-9</p>
-              <p>Libération du légalisme</p>
-            </div>
-          </div>
-
-          <!-- Pillar 3 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-            <div class="text-center mb-4">
-              <div class="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                <i class="fas fa-water text-primary"></i>
-              </div>
-              <h4 class="text-lg font-light text-primary mb-2">Le Baptême Biblique</h4>
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Par immersion totale dans le Nom du Seigneur Jésus-Christ.
-            </p>
-            <div class="text-xs text-gray-500">
-              <p class="font-semibold">Actes 2:38</p>
-              <p>Obéissance au commandement</p>
-            </div>
-          </div>
-
-          <!-- Pillar 4 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-            <div class="text-center mb-4">
-              <div class="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                <i class="fas fa-dove text-primary"></i>
-              </div>
-              <h4 class="text-lg font-light text-primary mb-2">Le Saint-Esprit</h4>
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Personne divine qui nous guide dans toute la vérité.
-            </p>
-            <div class="text-xs text-gray-500">
-              <p class="font-semibold">Jean 16:13</p>
-              <p>Comprendre et vivre la vérité</p>
-            </div>
-          </div>
-
-          <!-- Pillar 5 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-            <div class="text-center mb-4">
-              <div class="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                <i class="fas fa-book-open text-primary"></i>
-              </div>
-              <h4 class="text-lg font-light text-primary mb-2">L'Autorité des Écritures</h4>
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              La Parole inspirée de Dieu, seule autorité infaillible.
-            </p>
-            <div class="text-xs text-gray-500">
-              <p class="font-semibold">2 Timothée 3:16</p>
-              <p>Protection contre les faux enseignements</p>
-            </div>
-          </div>
-
-          <!-- Pillar 6 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-            <div class="text-center mb-4">
-              <div class="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                <i class="fas fa-church text-primary"></i>
-              </div>
-              <h4 class="text-lg font-light text-primary mb-2">L'Église comme Corps</h4>
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Corps mystique composé de tous les vrais croyants.
-            </p>
-            <div class="text-xs text-gray-500">
-              <p class="font-semibold">Éphésiens 1:22-23</p>
-              <p>Manifestation de l'amour de Christ</p>
-            </div>
-          </div>
-
-          <!-- Pillar 7 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-            <div class="text-center mb-4">
-              <div class="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
-                <i class="fas fa-star text-primary"></i>
-              </div>
-              <h4 class="text-lg font-light text-primary mb-2">Le Retour de Christ</h4>
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed mb-4">
-              Retour imminent, sainte attente et préparation constante.
-            </p>
-            <div class="text-xs text-gray-500">
-              <p class="font-semibold">1 Thessaloniciens 4:16-17</p>
-              <p>Influence notre mode de vie</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- The End-Time Message -->
-    <section class="py-16">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="bg-gradient-to-r from-primary to-primary/80 p-8 rounded-lg text-white">
-          <div class="text-center mb-8">
-            <h3 class="text-2xl font-light mb-4">Le Message du Temps de la Fin</h3>
-            <p class="opacity-90">La restauration de la vérité apostolique</p>
-          </div>
-          
-          <div class="space-y-6">
-            <div class="bg-white/10 backdrop-blur rounded-lg p-6">
-              <h4 class="text-lg font-light mb-3">La Restauration Prophétique</h4>
-              <p class="text-sm opacity-90">
-                Comme Jean-Baptiste fut envoyé pour la première venue, 
-                Dieu a envoyé un prophète pour notre génération afin de restaurer la vérité perdue.
+            <div class="bg-white rounded-lg p-3">
+              <p class="text-primary-gold font-semibold text-sm">Éphésiens 2:8-9</p>
+              <p class="text-gray-600 text-sm italic">
+                "Car c'est par la grâce que vous êtes sauvés..."
               </p>
             </div>
-            
-            <div class="bg-white/10 backdrop-blur rounded-lg p-6">
-              <h4 class="text-lg font-light mb-3">L'Accomplissement des Promesses</h4>
-              <p class="text-sm opacity-90">
-                Malachie 4:5-6 s'accomplit : "Voici, je vous enverrai Élie, le prophète, 
-                avant que le jour de l'Éternel arrive..."
+          </div>
+
+          <!-- Principle 2 -->
+          <div class="bg-bg-cream rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-primary-ocre rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <i class="fas fa-bible text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-primary-ocre mb-2">L'Inspiration des Écritures</h3>
+            </div>
+            <p class="text-gray-700 mb-4">
+              La Bible comme Parole inspirée de Dieu, autorité finale en matière de foi et de pratique.
+            </p>
+            <div class="bg-white rounded-lg p-3">
+              <p class="text-primary-ocre font-semibold text-sm">2 Timothée 3:16</p>
+              <p class="text-gray-600 text-sm italic">
+                "Toute Écriture est inspirée de Dieu..."
               </p>
             </div>
-            
-            <div class="bg-white/10 backdrop-blur rounded-lg p-6">
-              <h4 class="text-lg font-light mb-3">Notre Responsabilité</h4>
-              <p class="text-sm opacity-90">
-                Recevoir ce Message n'est pas une option, mais une responsabilité divine. 
-                Nous sommes appelés à le vivre, le partager, et le transmettre.
+          </div>
+
+          <!-- Principle 3 -->
+          <div class="bg-bg-cream rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-primary-bordeaux rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <i class="fas fa-dove text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-primary-bordeaux mb-2">Le Baptême du Saint-Esprit</h3>
+            </div>
+            <p class="text-gray-700 mb-4">
+              L'expérience du Saint-Esprit comme promesse pour tous les croyants.
+            </p>
+            <div class="bg-white rounded-lg p-3">
+              <p class="text-primary-bordeaux font-semibold text-sm">Actes 2:4</p>
+              <p class="text-gray-600 text-sm italic">
+                "Ils furent tous remplis du Saint-Esprit..."
+              </p>
+            </div>
+          </div>
+
+          <!-- Principle 4 -->
+          <div class="bg-bg-cream rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-primary-gold rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <i class="fas fa-heart text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-primary-gold mb-2">La Vie de Sainteté</h3>
+            </div>
+            <p class="text-gray-700 mb-4">
+              L'appel à une vie séparée et consacrée, reflétant le caractère de Christ.
+            </p>
+            <div class="bg-white rounded-lg p-3">
+              <p class="text-primary-gold font-semibold text-sm">1 Pierre 1:16</p>
+              <p class="text-gray-600 text-sm italic">
+                "Soyez saints, car je suis saint."
+              </p>
+            </div>
+          </div>
+
+          <!-- Principle 5 -->
+          <div class="bg-bg-cream rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-primary-ocre rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <i class="fas fa-church text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-primary-ocre mb-2">L'Église Locale</h3>
+            </div>
+            <p class="text-gray-700 mb-4">
+              L'importance de la communion fraternelle et de l'assemblée locale.
+            </p>
+            <div class="bg-white rounded-lg p-3">
+              <p class="text-primary-ocre font-semibold text-sm">Hébreux 10:25</p>
+              <p class="text-gray-600 text-sm italic">
+                "N'abandonnez pas votre assemblée..."
+              </p>
+            </div>
+          </div>
+
+          <!-- Principle 6 -->
+          <div class="bg-bg-cream rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-primary-bordeaux rounded-full flex items-center justify-center text-white mx-auto mb-4">
+                <i class="fas fa-crown text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-serif font-bold text-primary-bordeaux mb-2">Le Retour de Christ</h3>
+            </div>
+            <p class="text-gray-700 mb-4">
+              L'espérance bienheureuse du retour imminent de notre Seigneur Jésus-Christ.
+            </p>
+            <div class="bg-white rounded-lg p-3">
+              <p class="text-primary-bordeaux font-semibold text-sm">1 Thessaloniciens 4:16-17</p>
+              <p class="text-gray-600 text-sm italic">
+                "Le Seigneur lui-même descendra du ciel..."
               </p>
             </div>
           </div>
@@ -192,333 +212,155 @@
       </div>
     </section>
 
-    <!-- The Prophet Messenger -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <h3 class="text-2xl font-light text-gray-900 mb-4">
-            Le Messager Prophétique
-          </h3>
-          <p class="text-gray-600 max-w-2xl mx-auto">
-            William Marrion Branham (1909-1965), le messager de l'âge de Laodicée, 
-            accomplissant la prophétie de Malachie 4:5-6
+    <!-- Historical Messages -->
+    <section class="py-20 bg-bg-cream">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6 text-primary-gold">
+            Messages Historiques
+          </h2>
+          <div class="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+            Les enseignements qui ont marqué l'histoire de l'Église
           </p>
         </div>
-        
-        <div class="bg-white p-8 rounded-lg shadow-sm">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h4 class="text-lg font-light text-primary mb-4">La Commission Divine</h4>
-              <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                "Voici, je vous enverrai Élie, le prophète, avant que le jour de l'Éternel arrive, 
-                ce jour grand et redoutable. Il ramènera le cœur des pères à leurs enfants, 
-                et le cœur des enfants à leurs pères." (Malachie 4:5-6)
-              </p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                William Branham a été oint pour restaurer la vérité originale, 
-                ramener l'Église à la foi apostolique et préparer l'Épouse pour le retour de Christ.
-              </p>
-            </div>
-            
-            <div>
-              <h4 class="text-lg font-light text-primary mb-4">Les Signes Confirmés</h4>
-              <div class="space-y-3">
-                <div class="flex items-start">
-                  <i class="fas fa-check text-primary mr-3 mt-1"></i>
-                  <div>
-                    <p class="text-gray-600 text-sm font-semibold">La Colonne de Feu</p>
-                    <p class="text-gray-500 text-xs">Photographiée et authentifiée en 1950</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <i class="fas fa-check text-primary mr-3 mt-1"></i>
-                  <div>
-                    <p class="text-gray-600 text-sm font-semibold">Discernement des pensées</p>
-                    <p class="text-gray-500 text-xs">Connaissance des secrets et des maladies</p>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <i class="fas fa-check text-primary mr-3 mt-1"></i>
-                  <div>
-                    <p class="text-gray-600 text-sm font-semibold">Guérisons miraculeuses</p>
-                    <p class="text-gray-500 text-xs">Restauration de corps et d'esprits</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- The Seven Thunders -->
-    <section class="py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <h3 class="text-2xl font-light text-gray-900 mb-4">
-            Les Sept Tonnerres
-          </h3>
-          <p class="text-gray-600 max-w-2xl mx-auto">
-            Les mystères révélés pour la fin des temps, scellés jusqu'au moment appointed
-          </p>
-        </div>
-        
-        <div class="bg-gray-50 p-8 rounded-lg">
-          <div class="space-y-6">
-            <div class="border-l-4 border-primary pl-6">
-              <h4 class="text-lg font-light text-gray-900 mb-2">Apocalypse 10:3-7</h4>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                "Il cria d'une voix forte, comme un lion rugit. Quand il eut crié, 
-                les sept tonnerres firent entendre leurs voix... et les sept tonnerres 
-                avaient parlé, je n'allais pas écrire leurs paroles."
-              </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <div>
-                <h5 class="font-light text-primary mb-3">Les Mystères Révélés</h5>
-                <ul class="space-y-2 text-sm text-gray-600">
-                  <li class="flex items-start">
-                    <i class="fas fa-star text-primary mr-2 mt-1 text-xs"></i>
-                    <span>Le mystère de la Divinité</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-star text-primary mr-2 mt-1 text-xs"></i>
-                    <span>Le mystère de l'Épouse</span>
-                  </li>
-                  <li class="flex items-start">
-                    <i class="fas fa-star text-primary mr-2 mt-1 text-xs"></i>
-                    <span>Le mystère de la Semence du Serpent</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h5 class="font-light text-primary mb-3">Le Temps de la Révélation</h5>
-                <p class="text-sm text-gray-600 leading-relaxed">
-                  Ces mystères, scellés depuis des siècles, ont été révélés 
-                  à travers le ministère du prophète Branham pour préparer 
-                  l'Épouse à enlever avec l'Époux.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- The Bride Age -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <h3 class="text-2xl font-light text-gray-900 mb-4">
-            L'Âge de l'Épouse
-          </h3>
-          <p class="text-gray-600 max-w-2xl mx-auto">
-            La période finale où l'Épouse se prépare pour les noces de l'Agneau
-          </p>
-        </div>
-        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h4 class="text-lg font-light text-primary mb-4">Les Caractéristiques</h4>
-            <div class="space-y-3">
-              <div class="flex items-start">
-                <i class="fas fa-dove text-primary mr-3 mt-1"></i>
-                <div>
-                  <p class="text-gray-700 text-sm font-semibold">Virginale spirituelle</p>
-                  <p class="text-gray-500 text-xs">Pureté doctrinale et morale</p>
-                </div>
+          <div class="bg-white rounded-lg p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary-gold rounded-full flex items-center justify-center text-white font-bold mr-4">
+                1
               </div>
-              <div class="flex items-start">
-                <i class="fas fa-eye text-primary mr-3 mt-1"></i>
-                <div>
-                  <p class="text-gray-700 text-sm font-semibold">Voyante spirituelle</p>
-                  <p class="text-gray-500 text-xs">Discernement des temps</p>
-                </div>
-              </div>
-              <div class="flex items-start">
-                <i class="fas fa-ring text-primary mr-3 mt-1"></i>
-                <div>
-                  <p class="text-gray-700 text-sm font-semibold">Engagée spirituellement</p>
-                  <p class="text-gray-500 text-xs">Mariage mystique avec Christ</p>
-                </div>
+              <div>
+                <h3 class="text-xl font-serif font-bold text-primary-gold">La Réformation</h3>
+                <p class="text-text-secondary">16ème siècle</p>
               </div>
             </div>
+            <p class="text-gray-700 mb-4">
+              Le retour aux Écritures comme seule autorité, "Sola Scriptura".
+            </p>
+            <div class="bg-primary-gold/10 rounded-lg p-3">
+              <p class="text-primary-gold font-semibold text-sm">Martin Luther</p>
+              <p class="text-gray-600 text-sm italic">
+                "Juste par la foi, seule la foi."
+              </p>
+            </div>
           </div>
-          
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h4 class="text-lg font-light text-primary mb-4">La Préparation</h4>
-            <div class="space-y-3">
-              <div class="flex items-start">
-                <i class="fas fa-book text-primary mr-3 mt-1"></i>
-                <div>
-                  <p class="text-gray-700 text-sm font-semibold">La Parole révélée</p>
-                  <p class="text-gray-500 text-xs">Nourriture spirituelle quotidienne</p>
-                </div>
+
+          <div class="bg-white rounded-lg p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary-ocre rounded-full flex items-center justify-center text-white font-bold mr-4">
+                2
               </div>
-              <div class="flex items-start">
-                <i class="fas fa-pray text-primary mr-3 mt-1"></i>
-                <div>
-                  <p class="text-gray-700 text-sm font-semibold">La communion divine</p>
-                  <p class="text-gray-500 text-xs">Relation intime avec Christ</p>
-                </div>
+              <div>
+                <h3 class="text-xl font-serif font-bold text-primary-ocre">Le Réveil</h3>
+                <p class="text-text-secondary">18ème siècle</p>
               </div>
-              <div class="flex items-start">
-                <i class="fas fa-users text-primary mr-3 mt-1"></i>
-                <div>
-                  <p class="text-gray-700 text-sm font-semibold">La séparation</p>
-                  <p class="text-gray-500 text-xs">Distinction du monde</p>
-                </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              Le renouveau spirituel avec l'accent sur la sanctification et la prière.
+            </p>
+            <div class="bg-primary-ocre/10 rounded-lg p-3">
+              <p class="text-primary-ocre font-semibold text-sm">John Wesley</p>
+              <p class="text-gray-600 text-sm italic">
+                "Un cœur réchauffé par l'amour de Dieu."
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary-bordeaux rounded-full flex items-center justify-center text-white font-bold mr-4">
+                3
               </div>
+              <div>
+                <h3 class="text-xl font-serif font-bold text-primary-bordeaux">Le Réveil du Rétablissement</h3>
+                <p class="text-text-secondary">20ème siècle</p>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              La restauration des vérités bibliques perdues à travers les âges.
+            </p>
+            <div class="bg-primary-bordeaux/10 rounded-lg p-3">
+              <p class="text-primary-bordeaux font-semibold text-sm">William Branham</p>
+              <p class="text-gray-600 text-sm italic">
+                "Le rétablissement de toutes choses."
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary-gold rounded-full flex items-center justify-center text-white font-bold mr-4">
+                4
+              </div>
+              <div>
+                <h3 class="text-xl font-serif font-bold text-primary-gold">Le Message du Temps de la Fin</h3>
+                <p class="text-text-secondary">Notre époque</p>
+              </div>
+            </div>
+            <p class="text-gray-700 mb-4">
+              La révélation des mystères divins pour la préparation de l'Épouse.
+            </p>
+            <div class="bg-primary-gold/10 rounded-lg p-3">
+              <p class="text-primary-gold font-semibold text-sm">Apocalypse 10:7</p>
+              <p class="text-gray-600 text-sm italic">
+                "Le mystère de Dieu s'accomplit."
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Églises Sœurs -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <h3 class="text-2xl font-light text-gray-900 mb-4">
-            Une Famille Spirituelle Mondiale
-          </h3>
-          <p class="text-gray-600">Le Message atteint 60 pays à travers les églises sœurs</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Afrique -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h4 class="text-lg font-light text-primary mb-4">Afrique</h4>
-            <div class="space-y-3">
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Fr ADO - Brazzaville, Congo</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Fr Theo Somue - Kwilu Ngongo, Congo</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Fr Martin Mbelu - Goma, Congo</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Fr Obed Diyoka - Johannesburg, Afrique du Sud</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Fr Balanganayi - Angola</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Fr Bitwa - République Démocratique du Congo</span>
-              </div>
-            </div>
-            <div class="mt-4 text-xs text-gray-500 text-center">36 pays touchés</div>
-          </div>
-
-          <!-- Amérique -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h4 class="text-lg font-light text-primary mb-4">Amérique</h4>
-            <div class="space-y-3">
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Églises aux États-Unis</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Communautés au Canada</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Églises en Amérique Latine</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Communautés aux Caraïbes</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Églises au Mexique</span>
-              </div>
-            </div>
-            <div class="mt-4 text-xs text-gray-500 text-center">5 pays touchés</div>
-          </div>
-
-          <!-- Europe et Asie -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h4 class="text-lg font-light text-primary mb-4">Europe & Asie</h4>
-            <div class="space-y-3">
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Communautés en France</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Églises au Royaume-Uni</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Communautés en Belgique</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Églises en Allemagne</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Communautés en Inde</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Églises au Japon</span>
-              </div>
-            </div>
-            <div class="mt-4 text-xs text-gray-500 text-center">18 pays touchés</div>
-          </div>
-        </div>
-
-        <div class="mt-12 bg-primary/5 border border-primary/20 rounded-lg p-6">
-          <h4 class="text-lg font-light text-primary mb-4">Un Seul Corps, Plusieurs Membres</h4>
-          <p class="text-gray-700 text-sm leading-relaxed">
-            Chaque église sœur est comme une branche greffée sur le même cep vital. 
-            Bien que dispersées géographiquement, elles sont unies spirituellement 
-            par la même foi, le même Message, et la même espérance.
+    <!-- Study Resources -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6 text-primary-gold">
+            Ressources d'Étude
+          </h2>
+          <div class="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+            Approfondissez votre compréhension du Message divin
           </p>
-          <p class="text-gray-700 text-sm leading-relaxed mt-4">
-            Les pasteurs et les fidèles de ces églises ne sont pas simplement des partenaires, 
-            mais des membres de la même famille spirituelle, des gardiens de la même vérité, 
-            et des témoins de la même grâce.
-          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-primary-gold rounded-full flex items-center justify-center text-white mx-auto mb-4">
+              <i class="fas fa-book text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-primary-gold mb-2">Études Bibliques</h3>
+            <p class="text-gray-700">
+              Des études approfondies des Écritures avec des commentaires inspirés
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-primary-ocre rounded-full flex items-center justify-center text-white mx-auto mb-4">
+              <i class="fas fa-headphones text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-primary-ocre mb-2">Messages Audio</h3>
+            <p class="text-gray-700">
+              Enregistrements de prédications et d'enseignements spirituels
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-20 h-20 bg-primary-bordeaux rounded-full flex items-center justify-center text-white mx-auto mb-4">
+              <i class="fas fa-video text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-serif font-bold text-primary-bordeaux mb-2">Vidéos</h3>
+            <p class="text-gray-700">
+              Témoignages et enseignements visuels pour nourrir votre foi
+            </p>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- Conclusion -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <div class="bg-gradient-to-r from-primary to-secondary p-8 rounded-lg text-white">
-          <h3 class="text-2xl font-light mb-6">Un Héritage Éternel</h3>
-          <p class="mb-8 opacity-90">
-            Ces enseignements fondamentaux ne sont pas simplement des vérités à connaître, 
-            mais des principes divins à vivre, à aimer et à transmettre.
-          </p>
-          
-          <blockquote class="text-lg italic mb-6">
-            "Et cette bonne nouvelle du royaume sera prêchée dans le monde entier, en témoignage à toutes les nations. Alors viendra la fin."
-          </blockquote>
-          <p class="text-sm font-semibold">Matthieu 24:14</p>
-        </div>
-      </div>
-    </section>
+    
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Message'
-}
+<script setup>
 </script>
+                                      
+                                   
+                                                                                                                                

@@ -1,0 +1,213 @@
+/* 🎨 Palette de Couleurs Souviens-Toi */
+
+/* Variables de couleurs principales */
+:root {
+  --primary-gold: #D4AF37;
+  --primary-ocre: #B89F5F;
+  --primary-bordeaux: #8B3A50;
+  --bg-cream: #FFF8F0;
+  --text-primary: #2C2C2C;
+  --text-secondary: #666666;
+}
+
+/* Classes utilitaires Souviens-Toi */
+.text-primary-gold {
+  color: var(--primary-gold);
+}
+
+.text-primary-ocre {
+  color: var(--primary-ocre);
+}
+
+.text-primary-bordeaux {
+  color: var(--primary-bordeaux);
+}
+
+.text-text-primary {
+  color: var(--text-primary);
+}
+
+.text-text-secondary {
+  color: var(--text-secondary);
+}
+
+.bg-primary-gold {
+  background-color: var(--primary-gold);
+}
+
+.bg-primary-ocre {
+  background-color: var(--primary-ocre);
+}
+
+.bg-primary-bordeaux {
+  background-color: var(--primary-bordeaux);
+}
+
+.bg-bg-cream {
+  background-color: var(--bg-cream);
+}
+
+/* Boutons Souviens-Toi */
+.btn-souviens {
+  background: var(--primary-gold);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-souviens:hover {
+  background: var(--primary-ocre);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.btn-souviens-secondary {
+  background: transparent;
+  color: var(--primary-gold);
+  border: 2px solid var(--primary-gold);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-souviens-secondary:hover {
+  background: var(--primary-gold);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* Cards Souviens-Toi */
+.card-souviens {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.card-souviens:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-color: var(--primary-gold);
+}
+
+/* Hero Souviens-Toi */
+.hero-souviens {
+  background: linear-gradient(135deg, var(--primary-bordeaux) 0%, var(--primary-gold) 100%);
+  color: white;
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-souviens::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.hero-souviens > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Navigation Souviens-Toi */
+.nav-souviens {
+  background: white;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-item-souviens {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-item-souviens:hover {
+  background: var(--primary-gold);
+  color: white;
+}
+
+/* Sections Souviens-Toi */
+.section-souviens {
+  padding: 5rem 0;
+  background: var(--bg-cream);
+}
+
+.section-souviens-white {
+  padding: 5rem 0;
+  background: white;
+}
+
+/* Typography Souviens-Toi */
+.title-souviens {
+  color: var(--primary-gold);
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Playfair Display', serif;
+}
+
+.subtitle-souviens {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card-title-souviens {
+  color: var(--primary-gold);
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+}
+
+.card-text-souviens {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Animations Souviens-Toi */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Gradients Souviens-Toi */
+.gradient-souviens {
+  background: linear-gradient(135deg, var(--primary-bordeaux) 0%, var(--primary-gold) 100%);
+}
+
+.gradient-souviens-light {
+  background: linear-gradient(135deg, rgba(139, 58, 80, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+}

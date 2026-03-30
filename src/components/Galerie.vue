@@ -208,7 +208,7 @@ export default {
         },
         {
           id: 3,
-          title: 'Spectacle de Noël 2023',
+          title: 'Spectacle de Noël 2025',
           description: 'Les enfants présentent la nativité',
           thumbnail: '/video-thumb3.jpg',
           url: '#'

@@ -1,413 +1,326 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <!-- Hero Section -->
-    <section class="relative h-96 bg-gradient-to-r from-primary to-primary/80 flex items-center justify-center">
-      <div class="absolute inset-0 bg-black/20"></div>
-      <div class="relative text-center text-white px-6">
-        <h1 class="text-4xl lg:text-6xl font-light mb-4">Voix</h1>
-        <p class="text-xl lg:text-2xl opacity-90">Les témoins de la grâce divine</p>
-      </div>
-    </section>
-
-    <!-- Introduction -->
-    <section class="py-16">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-3xl lg:text-4xl font-light text-gray-900 mb-8">
-          Des vies transformées
-        </h2>
-        <p class="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
-          Chaque témoignage est une preuve vivante que Dieu transforme les cœurs brisés, 
-          restaure les espoirs perdus, et écrit des histoires de grâce.
-        </p>
-      </div>
-    </section>
-
-    <!-- Featured Ministers -->
-    <section class="py-12 sm:py-16 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-8 sm:mb-12">
-          <h3 class="text-xl sm:text-2xl lg:text-3xl font-light text-gray-900 mb-4">
-            Les Voix du Ministère
-          </h3>
-          <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Les serviteurs de Dieu qui continuent de proclamer le Message à travers le monde
+  <div class="min-h-screen bg-bg-cream">
+    <Navbar />
+    
+    <!-- Hero Section - Design Souviens-Toi -->
+    <section class="relative bg-gradient-to-br from-primary-ocre to-primary-gold text-white overflow-hidden">
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="relative container mx-auto px-4 py-20 lg:py-32">
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 leading-tight">
+            Voix<br>
+            <span class="text-yellow-200">Les Témoins de la Grâce</span>
+          </h1>
+          <div class="text-2xl md:text-3xl font-serif mb-8 text-yellow-100">
+            Des vies transformées par la puissance divine
+          </div>
+          <p class="text-lg md:text-xl mb-12 text-gray-100 leading-relaxed max-w-4xl mx-auto">
+            Chaque témoignage est une preuve vivante que Dieu transforme les cœurs brisés, 
+            restaure les espoirs perdus, et écrit des histoires de grâce.
           </p>
         </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg class="w-full h-12 text-bg-cream" viewBox="0 0 1440 48" fill="currentColor">
+          <path d="M0,32 C120,42 240,18 360,24 C480,30 600,42 720,36 C840,30 960,18 1080,24 C1200,30 1320,42 1440,32 L1440,48 L0,48 Z"/>
+        </svg>
+      </div>
+    </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          <!-- Pasteur Bitwa -->
-          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <div class="text-center mb-4">
-              <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
-                <img src="/temoignage/bitwa.jpg" alt="Pasteur Bitwa" class="w-full h-full object-cover">
+    <!-- Featured Testimony -->
+    <section class="py-20 bg-bg-cream">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6 text-primary-gold">
+            Notre Pasteur
+          </h2>
+          <div class="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+            Richard Diyoka N'sanguluja<br>
+            Shekinah Tabernacle
+          </p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <div class="flex flex-col lg:flex-row items-center gap-8">
+              <div class="lg:w-1/3">
+                <img 
+                  src="/temoignage/Pastor.png" 
+                  alt="Pasteur Richard Diyoka N'sanguluja"
+                  class="w-full rounded-lg shadow-lg"
+                />
               </div>
-              <h4 class="text-lg font-light text-gray-900 mb-1">Pasteur Bitwa</h4>
-              <p class="text-gray-600 text-sm mb-2">Serviteur de Dieu</p>
+              <div class="lg:w-2/3">
+                <h3 class="text-2xl font-bold text-primary-gold mb-4">
+                  Transmettre aux Générations Futures
+                </h3>
+                <div class="text-gray-700 leading-relaxed space-y-4 text-justify">
+                  <p>
+                    Aux générations présentes et futures, nous tenons à partager l'histoire remarquable 
+                    et l'héritage spirituel du Pasteur Richard Diyoka N'sanguluja. Sa vie est un témoignage 
+                    vivant de la fidélité divine et une source d'inspiration pour tous ceux qui cherchent 
+                    à comprendre la profondeur de l'appel de Dieu dans ce temps de la fin.
+                  </p>
+                  
+                  <blockquote class="border-l-4 border-primary-gold pl-4 italic text-text-secondary">
+                    « Mon peuple, écoute mes instructions! Prêtez l'oreille aux paroles de ma bouche ! 
+                    J'ouvre la bouche par des sentences, je publie la sagesse des temps anciens. 
+                    Ce que nous avons entendu, ce que nous savons, ce que nos pères nous ont raconté, 
+                    nous ne le cacherons point à leurs enfants ; nous dirons à la génération future 
+                    les louanges de l'Eternel, et sa puissance, et les prodiges qu'il a opérés.»
+                  </blockquote>
+                  
+                  <p class="text-sm text-right text-text-secondary font-semibold">
+                    Psaume 78:1-8
+                  </p>
+                  
+                  <p>
+                    Depuis plus de seize années dans l'œuvre du Seigneur, le Pasteur Diyoka a consacré 
+                    sa vie à la proclamation du Message du temps de la fin. Son parcours spirituel 
+                    est marqué par une dévotion sans faille, une sagesse profonde et une vision 
+                    claire de la volonté de Dieu pour notre génération. À travers Shekinah Tabernacle 
+                    et Shekinah Publications, il a œuvré sans relâche pour rendre accessibles les 
+                    enseignements du prophète William Marrion Branham, touchant des milliers de vies 
+                    à travers le monde.
+                  </p>
+                  
+                  <p>
+                    La vision de <strong>Souviens-Toi</strong> naît de cette même préoccupation : 
+                    transmettre aux générations futures les merveilles que Dieu accomplit en notre temps. 
+                    Nous croyons que l'héritage spirituel laissé par le Pasteur Diyoka ne doit pas 
+                    se perdre, mais plutôt inspirer les jeunes générations à se consacrer entièrement 
+                    à l'œuvre de Dieu. Sa vie nous enseigne que la fidélité, la persévérance et 
+                    l'amour pour la vérité sont les piliers sur lesquels Dieu bâtit Son Église.
+                  </p>
+                  
+                  <p>
+                    Ce site web <strong>Souviens-Toi</strong> est notre réponse à l'appel de transmettre 
+                    ce précieux héritage. Nous voulons que les générations futures comprennent comment 
+                    Dieu a utilisé un homme humble et dévoué pour accomplir des choses extraordinaires. 
+                    Chaque témoignage, chaque sermon, chaque expérience partagée ici est une pierre 
+                    ajoutée à l'édifice spirituel que le Pasteur Diyoka a construit avec l'aide de Dieu.
+                  </p>
+                  
+                  <p>
+                    Aux jeunes qui liront ces mots, sachez que l'appel de Dieu est aussi pour vous. 
+                    La vie du Pasteur Richard Diyoka N'sanguluja nous montre que Dieu n'appelle pas 
+                    les qualifiés, mais Il qualifie ceux qu'Il appelle. Sa vision pour l'Église du 
+                    temps de la fin reste vivante et pertinente : nous devons être prêts, purs, 
+                    et consacrés pour l'enlèvement de l'Épouse de Christ.
+                  </p>
+                  
+                  <p>
+                    Que ce témoignage inspire chaque génération à se souvenir des grandes œuvres 
+                    de Dieu, à marcher dans la vérité du Message, et à préparer le chemin du retour 
+                    de notre Seigneur Jésus-Christ. L'héritage du Pasteur Diyoka vit à travers 
+                    chaque vie transformée, chaque âme sauvée, et chaque cœur qui brûle d'amour 
+                    pour Dieu.
+                  </p>
+                  
+                  <p class="text-right font-semibold text-primary-gold">
+                    Pasteur Richard Diyoka N'sanguluja<br>
+                    Shekinah Tabernacle
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="audio-player">
-              <audio controls class="w-full">
-                <source src="/audios/Bitwa.mp3" type="audio/mpeg">
-                Votre navigateur ne supporte pas l'élément audio.
-              </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Le Moment Historique -->
+    <section class="py-20 bg-gradient-to-br from-primary-ocre/10 to-primary-gold/10">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6 text-primary-gold">
+            Le Moment Historique
+          </h2>
+          <div class="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+            La photographie qui a marqué l'histoire du ministère prophétique
+          </p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="flex flex-col lg:flex-row items-center">
+              <div class="lg:w-1/2">
+                <img 
+                  src="/temoignage/images.jpg" 
+                  alt="William Marrion Branham - Le Prophète du Temps de la Fin"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="lg:w-1/2 p-8">
+                <h3 class="text-2xl font-bold text-primary-gold mb-4">
+                  William Branham - Le Prophète
+                </h3>
+                <h4 class="text-xl font-semibold text-text-secondary mb-4">
+                  Le Prophète du Temps de la Fin
+                </h4>
+                <p class="text-sm text-primary-gold font-semibold mb-4">
+                  William Marrion Branham (1909-1965)
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                  Messager divinement oint pour le temps de la fin, William Branham a apporté le Message de Dieu 
+                  à une génération en attente. Son ministère a été marqué par des signes, des prodiges et des 
+                  guérisons miraculeuses.
+                </p>
+                <blockquote class="border-l-4 border-primary-gold pl-4 italic text-text-secondary">
+                  "Je ne suis qu'une voix criant dans le désert, mais Celui qui m'a envoyé est la Parole Elle-même pour ce jour."
+                </blockquote>
+              </div>
             </div>
-            <p class="text-gray-600 text-sm italic mt-4">
-              "Le Message est la lumière qui nous guide dans ces temps de ténèbres."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Minister Testimonies -->
+    <section class="py-20 bg-bg-cream">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6 text-primary-gold">
+            Les Voix du Ministère
+          </h2>
+          <div class="w-24 h-1 bg-primary-gold mx-auto mb-6"></div>
+          <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+            Les serviteurs de Dieu qui témoignent de l'impact du ministère du Pasteur Diyoka<br>
+            et continuent de proclamer le Message à travers le monde
+          </p>
+        </div>
+        
+        <!-- Introduction Section -->
+        <div class="max-w-4xl mx-auto mb-16">
+          <div class="bg-white rounded-lg p-8 shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 bg-primary-gold/20 rounded-full flex items-center justify-center mr-4">
+                <i class="fas fa-microphone-alt text-primary-gold text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-2xl font-serif font-bold text-primary-gold mb-2">Témoignages Audio</h3>
+                <p class="text-text-secondary">Écoutez les voix de ceux dont les vies ont été transformées</p>
+              </div>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+              Chaque témoignage audio ci-dessous est une preuve vivante de l'impact du ministère du Pasteur Richard Diyoka N'sanguluja. 
+              Ces serviteurs de Dieu partagent leurs expériences personnelles, leurs guérisons, et les transformations 
+              qu'ils ont vécues à travers le Message du temps de la fin. Leurs voix résonnent avec la vérité 
+              et l'authenticité d'un ministère marqué par l'onction divine.
             </p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Pasteur Bitwa -->
+          <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="p-6">
+              <div class="text-center mb-4">
+                <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-4 border-primary-gold/20">
+                  <img src="/temoignage/bitwa.jpg" alt="Pasteur Bitwa" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-serif font-bold text-primary-gold mb-2">Pasteur Bitwa</h3>
+                <p class="text-text-secondary mb-4">Serviteur de Dieu</p>
+              </div>
+              
+              <div class="bg-gradient-to-r from-primary-gold/10 to-primary-ocre/10 rounded-lg p-4">
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-headphones text-primary-gold mr-2"></i>
+                  <span class="text-sm font-semibold text-primary-gold">Témoignage Audio</span>
+                </div>
+                <audio controls class="w-full h-10">
+                  <source src="/audios/Bitwa.mp3" type="audio/mpeg">
+                  Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+                <div class="text-xs text-gray-500 mt-2">
+                  Durée: 4:05 | Thème: La foi et la vision
+                </div>
+              </div>
+            </div>
           </div>
           
           <!-- Pasteur Balanganayi -->
-          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <div class="text-center mb-4">
-              <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
-                <img src="/temoignage/bala.jpg" alt="Pasteur Balanganayi" class="w-full h-full object-cover">
+          <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="p-6">
+              <div class="text-center mb-4">
+                <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-4 border-primary-gold/20">
+                  <img src="/temoignage/bala.jpg" alt="Pasteur Balanganayi" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-serif font-bold text-primary-gold mb-2">Pasteur Balanganayi</h3>
+                <p class="text-text-secondary mb-4">Serviteur de Dieu</p>
               </div>
-              <h4 class="text-lg font-light text-gray-900 mb-1">Pasteur Balanganayi</h4>
-              <p class="text-gray-600 text-sm mb-2">Serviteur de Dieu</p>
-            </div>
-            <div class="audio-player">
-              <audio controls class="w-full">
-                <source src="/audios/bala.mp3" type="audio/mpeg">
-                Votre navigateur ne supporte pas l'élément audio.
-              </audio>
-            </div>
-            <p class="text-gray-600 text-sm italic mt-4">
-              "Nous devons être des canaux purs pour la pureté de la Parole."
-            </p>
-          </div>
-          
-          <!-- Révérend Kayumbi Beya -->
-          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <div class="text-center mb-4">
-              <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
-                <img src="/temoignage/testimonial-1.gif" alt="Révérend Kayumbi Beya" class="w-full h-full object-cover">
-              </div>
-              <h4 class="text-lg font-light text-gray-900 mb-1">Révérend KAYUMBI BEYA Léonard</h4>
-              <p class="text-gray-600 text-sm mb-2">Guide spirituel de l'église ZOE TABERNACLE</p>
-              <p class="text-gray-500 text-xs">Mbuji-Mayi et Kinshasa</p>
-            </div>
-            <div class="audio-player">
-              <audio controls class="w-full">
-                <source src="/audios/past_kayumbi.mp3" type="audio/mpeg">
-                Votre navigateur ne supporte pas l'élément audio.
-              </audio>
-            </div>
-            <p class="text-gray-600 text-sm italic mt-4">
-              "L'unité de l'Esprit est la marque de la véritable Église."
-            </p>
-          </div>
-          
-          <!-- Pasteur Yves Kalombo -->
-          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <div class="text-center mb-4">
-              <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden">
-                <img src="/temoignage/testimonial-2.webp" alt="Pasteur Yves Kalombo" class="w-full h-full object-cover">
-              </div>
-              <h4 class="text-lg font-light text-gray-900 mb-1">Pasteur Yves Kalombo</h4>
-              <p class="text-gray-600 text-sm mb-2">Serviteur de Dieu</p>
-              <p class="text-gray-500 text-xs">Église Logos Tabernacle de Kinshasa</p>
-            </div>
-            <div class="audio-player">
-              <audio controls class="w-full">
-                <source src="/audios/yves.mp3" type="audio/mpeg">
-                Votre navigateur ne supporte pas l'élément audio.
-              </audio>
-            </div>
-            <p class="text-gray-600 text-sm italic mt-4">
-              "La fidélité au Message est notre seule sécurité spirituelle."
-            </p>
-          </div>
-          
-          <!-- Fr ADO -->
-          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <div class="text-center mb-4">
-              <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                <i class="fas fa-user text-primary text-2xl"></i>
-              </div>
-              <h4 class="text-lg font-light text-gray-900 mb-1">Fr ADO</h4>
-              <p class="text-gray-600 text-sm mb-2">Serviteur de Dieu</p>
-              <p class="text-gray-500 text-xs">Brazzaville, Congo</p>
-            </div>
-            <p class="text-gray-600 text-sm italic mt-4">
-              "La vérité ne change pas, c'est notre compréhension qui s'approfondit."
-            </p>
-          </div>
-          
-          <!-- Fr Theo Somue -->
-          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
-            <div class="text-center mb-4">
-              <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
-                <i class="fas fa-user text-primary text-2xl"></i>
-              </div>
-              <h4 class="text-lg font-light text-gray-900 mb-1">Fr Theo Somue</h4>
-              <p class="text-gray-600 text-sm mb-2">Serviteur de Dieu</p>
-              <p class="text-gray-500 text-xs">Kwilu Ngongo, Congo</p>
-            </div>
-            <p class="text-gray-600 text-sm italic mt-4">
-              "Le Message est notre nourriture spirituelle quotidienne."
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Global Network -->
-    <section class="py-12 sm:py-16 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-8 sm:mb-12">
-          <h3 class="text-xl sm:text-2xl lg:text-3xl font-light text-gray-900 mb-4">
-            Réseau Mondial
-          </h3>
-          <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Les églises sœurs qui portent le même Message à travers le monde
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          <!-- Afrique Centrale -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h4 class="text-lg font-light text-primary mb-4">Afrique Centrale</h4>
-            <div class="space-y-3">
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">ZOE Tabernacle - Mbuji-Mayi, RDC</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Logos Tabernacle - Kinshasa, RDC</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Église de Brazzaville, Congo</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Mission Kwilu Ngongo, RDC</span>
+              
+              <div class="bg-gradient-to-r from-primary-gold/10 to-primary-ocre/10 rounded-lg p-4">
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-headphones text-primary-gold mr-2"></i>
+                  <span class="text-sm font-semibold text-primary-gold">Témoignage Audio</span>
+                </div>
+                <audio controls class="w-full h-10">
+                  <source src="/audios/bala.mp3" type="audio/mpeg">
+                  Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+                <div class="text-xs text-gray-500 mt-2">
+                  Durée: 3:20 | Thème: La pureté de la Parole
+                </div>
               </div>
             </div>
           </div>
           
-          <!-- Afrique Australe -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h4 class="text-lg font-light text-primary mb-4">Afrique Australe</h4>
-            <div class="space-y-3">
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Shekinah Tabernacle - Johannesburg, Afrique du Sud</span>
+          <!-- Pasteur Kayumbi -->
+          <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="p-6">
+              <div class="text-center mb-4">
+                <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-4 border-primary-gold/20">
+                  <img src="/temoignage/kayumbi.gif" alt="Pasteur Kayumbi" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-serif font-bold text-primary-gold mb-2">Révérend Kayumbu Be Ya Leonard</h3>
+                <p class="text-text-secondary mb-4">Guide spirituel - ZOE Tabernacle</p>
               </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Églises en Angola</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Communautés au Zimbabwe</span>
+              
+              <div class="bg-gradient-to-r from-primary-gold/10 to-primary-ocre/10 rounded-lg p-4">
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-headphones text-primary-gold mr-2"></i>
+                  <span class="text-sm font-semibold text-primary-gold">Témoignage Audio</span>
+                </div>
+                <audio controls class="w-full h-10">
+                  <source src="/audios/past_kayumbi.mp3" type="audio/mpeg">
+                  Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+                <div class="text-xs text-gray-500 mt-2">
+                  Durée: 6:20 | Thème: Sagesse spirituelle
+                </div>
               </div>
             </div>
           </div>
           
-          <!-- Amérique -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <h4 class="text-lg font-light text-primary mb-4">Amérique du Nord</h4>
-            <div class="space-y-3">
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Églises aux États-Unis</span>
+          <!-- Frère Yves -->
+          <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="p-6">
+              <div class="text-center mb-4">
+                <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-4 border-primary-gold/20">
+                  <img src="/temoignage/yves.jpg" alt="Frère Yves" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-serif font-bold text-primary-gold mb-2">Yves Kalombo</h3>
+                <p class="text-text-secondary mb-4">Guide spirituel de l'église Logos Tabernacle de Kinshasa</p>
               </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Communautés au Canada</span>
-              </div>
-              <div class="flex items-center">
-                <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                <span class="text-sm text-gray-700">Églises au Mexique</span>
+              
+              <div class="bg-gradient-to-r from-primary-gold/10 to-primary-ocre/10 rounded-lg p-4">
+                <div class="flex items-center mb-2">
+                  <i class="fas fa-headphones text-primary-gold mr-2"></i>
+                  <span class="text-sm font-semibold text-primary-gold">Témoignage Audio</span>
+                </div>
+                <audio controls class="w-full h-10">
+                  <source src="/audios/yves.mp3" type="audio/mpeg">
+                  Votre navigateur ne supporte pas l'élément audio.
+                </audio>
+                <div class="text-xs text-gray-500 mt-2">
+                  Durée: 5:30 | Thème: Foi et persévérance
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Personal Testimonies -->
-    <section class="py-16">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-12">
-          <h3 class="text-2xl font-light text-gray-900 mb-4">
-            Les témoignages personnels
-          </h3>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Testimony 1 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <div class="flex items-start mb-4">
-              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                <i class="fas fa-heart text-primary"></i>
-              </div>
-              <div>
-                <h4 class="font-light text-gray-900">Jean Martin</h4>
-                <p class="text-xs text-gray-500">Janvier 2024</p>
-                <span class="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full mt-1">Restauration</span>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm italic leading-relaxed">
-              "J'étais arrivé ici le cœur brisé, ma foi réduite en cendres... Aujourd'hui, je peux dire avec larmes de joie que je suis né de nouveau. Cette église m'a rendu ma dignité et ma relation avec Dieu."
-            </p>
-          </div>
-          
-          <!-- Testimony 2 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <div class="flex items-start mb-4">
-              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                <i class="fas fa-dove text-primary"></i>
-              </div>
-              <div>
-                <h4 class="font-light text-gray-900">Sophie Laurent</h4>
-                <p class="text-xs text-gray-500">Décembre 2023</p>
-                <span class="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full mt-1">Guérison</span>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm italic leading-relaxed">
-              "Il y a cinq ans, je traversais une vallée sombre... Aujourd'hui, je ne suis plus la victime de mes circonstances, mais une survivante victorieuse par la grâce de Dieu."
-            </p>
-          </div>
-          
-          <!-- Testimony 3 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <div class="flex items-start mb-4">
-              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                <i class="fas fa-child text-primary"></i>
-              </div>
-              <div>
-                <h4 class="font-light text-gray-900">Pierre Bernard</h4>
-                <p class="text-xs text-gray-500">Novembre 2023</p>
-                <span class="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full mt-1">Espoir</span>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm italic leading-relaxed">
-              "Dieu m'a donné ici plus qu'une église : Il m'a donné une famille spirituelle pour mes enfants. Ils demandent maintenant quand nous pouvons y retourner."
-            </p>
-          </div>
-          
-          <!-- Testimony 4 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <div class="flex items-start mb-4">
-              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                <i class="fas fa-graduation-cap text-primary"></i>
-              </div>
-              <div>
-                <h4 class="font-light text-gray-900">Claire Dubois</h4>
-                <p class="text-xs text-gray-500">Octobre 2023</p>
-                <span class="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full mt-1">Transformation</span>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm italic leading-relaxed">
-              "À 19 ans, j'ai failli abandonner ma foi... Aujourd'hui, je ne suis plus seulement une croyante par tradition, mais une disciple par conviction."
-            </p>
-          </div>
-          
-          <!-- Testimony 5 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <div class="flex items-start mb-4">
-              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                <i class="fas fa-music text-primary"></i>
-              </div>
-              <div>
-                <h4 class="font-light text-gray-900">Michel Petit</h4>
-                <p class="text-xs text-gray-500">Septembre 2023</p>
-                <span class="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full mt-1">Révélation</span>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm italic leading-relaxed">
-              "Ce jour-là, mon christianisme est passé de la religion à la relation. Je ne peux plus imaginer vivre sans cette intimité divine."
-            </p>
-          </div>
-          
-          <!-- Testimony 6 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <div class="flex items-start mb-4">
-              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                <i class="fas fa-hands-helping text-primary"></i>
-              </div>
-              <div>
-                <h4 class="font-light text-gray-900">Isabelle Rousseau</h4>
-                <p class="text-xs text-gray-500">Août 2023</p>
-                <span class="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full mt-1">Soutien</span>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm italic leading-relaxed">
-              "Plus que la guérison physique, j'ai reçu la guérison de l'âme. Cette église est vraiment le corps de Christ en action."
-            </p>
-          </div>
-
-          <!-- Additional Testimony 7 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <div class="flex items-start mb-4">
-              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                <i class="fas fa-pray text-primary"></i>
-              </div>
-              <div>
-                <h4 class="font-light text-gray-900">Marie Dupont</h4>
-                <p class="text-xs text-gray-500">Juillet 2023</p>
-                <span class="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full mt-1">Foi</span>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm italic leading-relaxed">
-              "Dans les groupes de prière du mercredi, j'ai appris à déposer mes fardeaux aux pieds de Jésus. Ma vie spirituelle a été transformée."
-            </p>
-          </div>
-
-          <!-- Additional Testimony 8 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <div class="flex items-start mb-4">
-              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                <i class="fas fa-church text-primary"></i>
-              </div>
-              <div>
-                <h4 class="font-light text-gray-900">Paul Lefebvre</h4>
-                <p class="text-xs text-gray-500">Juin 2023</p>
-                <span class="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full mt-1">Communauté</span>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm italic leading-relaxed">
-              "J'ai trouvé ici une véritable famille spirituelle. Les frères et sœurs m'ont soutenu pendant les moments les plus difficiles de ma vie."
-            </p>
-          </div>
-
-          <!-- Additional Testimony 9 -->
-          <div class="bg-white p-6 rounded-lg shadow-sm">
-            <div class="flex items-start mb-4">
-              <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                <i class="fas fa-bible text-primary"></i>
-              </div>
-              <div>
-                <h4 class="font-light text-gray-900">Anne Moreau</h4>
-                <p class="text-xs text-gray-500">Mai 2023</p>
-                <span class="inline-block px-2 py-1 bg-primary/10 text-primary text-xs rounded-full mt-1">Étude</span>
-              </div>
-            </div>
-            <p class="text-gray-600 text-sm italic leading-relaxed">
-              "Les enseignements ici m'ont ouvert les Écritures comme jamais auparavant. Je comprends maintenant la profondeur du Message du temps de la fin."
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Share Your Story -->
-    <section class="py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-6 text-center">
-        <h3 class="text-2xl font-light text-gray-900 mb-8">
-          Votre histoire aussi compte
-        </h3>
-        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
-          Votre expérience avec Dieu est précieuse. En partageant votre témoignage, 
-          vous offrez l'espoir à ceux qui traversent des épreuves similaires.
-        </p>
-        <div class="bg-primary/5 border border-primary/20 rounded-lg p-6">
-          <p class="text-sm text-gray-700 italic mb-4">
-            "Ils l'ont vaincu à cause du sang de l'Agneau et à cause de la parole de leur témoignage..."
-          </p>
-          <p class="text-xs text-primary font-semibold">Apocalypse 12:11</p>
         </div>
       </div>
     </section>
@@ -416,6 +329,185 @@
 
 <script>
 export default {
-  name: 'Voix'
+  name: 'Voix',
+  data() {
+    return {
+      selectedFilter: 'all',
+      filters: [
+        { id: 'all', name: 'Tous' },
+        { id: 'pastors', name: 'Pasteurs' },
+        { id: 'witnesses', name: 'Témoins' }
+      ],
+      voices: [
+        {
+          id: 1,
+          name: 'Frère Joseph',
+          role: 'Pasteur - Kinshasa',
+          excerpt: 'Le jour où j\'ai entendu le Message pour la première fois, ma vie a changé à jamais. C\'était comme si une lumière divine illuminait mon âme...',
+          duration: 245,
+          date: '15 Mars 2025',
+          location: 'Kinshasa, RDC',
+          category: 'pastors',
+          audioSrc: '/audio/joseph-testimony.mp3'
+        },
+        {
+          id: 2,
+          name: 'Sœur Marie',
+          role: 'Témoin - Lubumbashi',
+          excerpt: 'J\'ai vu des guérisons miraculeuses et des vies transformées par la puissance de la prière. Ces moments restent gravés dans ma mémoire...',
+          duration: 180,
+          date: '22 Avril 2025',
+          location: 'Lubumbashi, RDC',
+          category: 'witnesses',
+          audioSrc: '/audio/marie-testimony.mp3'
+        },
+        {
+          id: 3,
+          name: 'Frère Antoine',
+          role: 'Pionnier - Matadi',
+          excerpt: 'Depuis plus de 50 ans, je sers le Seigneur dans cette région. Chaque jour, je vois l\'accomplissement des promesses divines...',
+          duration: 320,
+          date: '8 Janvier 2025',
+          location: 'Matadi, RDC',
+          category: 'pioneers',
+          audioSrc: '/audio/antoine-testimony.mp3'
+        },
+        {
+          id: 4,
+          name: 'Sœur Esther',
+          role: 'Témoin - Goma',
+          excerpt: 'La fidélité de Dieu ne m\'a jamais abandonnée, même dans les moments les plus difficiles. Son amour me soutient chaque jour...',
+          duration: 195,
+          date: '30 Juin 2025',
+          location: 'Goma, RDC',
+          category: 'witnesses',
+          audioSrc: '/audio/esther-testimony.mp3'
+        },
+        {
+          id: 5,
+          name: 'Frère David',
+          role: 'Pasteur - Bukavu',
+          excerpt: 'Le Message nous a donné une nouvelle vision de l\'Évangile. Je comprends maintenant le plan de Dieu pour notre génération...',
+          duration: 280,
+          date: '12 Septembre 2025',
+          location: 'Bukavu, RDC',
+          category: 'pastors',
+          audioSrc: '/audio/david-testimony.mp3'
+        },
+        {
+          id: 6,
+          name: 'Sœur Rachel',
+          role: 'Témoin - Kisangani',
+          excerpt: 'Ma guérison miraculeuse reste le témoignage le plus puissant de ma vie. Les médecins n\'avaient plus d\'espoir, mais Dieu...',
+          duration: 165,
+          date: '5 Novembre 2025',
+          location: 'Kisangani, RDC',
+          category: 'witnesses',
+          audioSrc: '/audio/rachel-testimony.mp3'
+        }
+      ],
+      featuredTestimony: {
+        name: 'Frère Joseph',
+        role: 'Pasteur - Église du Tabernacle de Shekinah',
+        image: '/temoignage/Pastor.png',
+        fullTestimony: 'Le jour où j\'ai entendu le Message pour la première fois, ma vie a changé à jamais. C\'était en 1985, lors d\'une campagne d\'évangélisation dans ma ville natale. Les paroles du pasteur ont résonné profondément dans mon cœur, comme si chaque phrase était spécialement adressée à moi. Ce soir-là, je me suis consacré entièrement au service de Dieu, et depuis, chaque jour de ma vie a été une aventure spirituelle extraordinaire. J\'ai vu des choses incroyables, des vies transformées, des familles restaurées, et des communautés entièrement changées par la puissance du Message divin.',
+        date: '15 Mars 2025',
+        location: 'Kinshasa, RDC',
+        duration: '15:45'
+      },
+      currentPlayingAudio: null
+    }
+  },
+  computed: {
+    filteredVoices() {
+      if (this.selectedFilter === 'all') {
+        return this.voices
+      }
+      return this.voices.filter(voice => voice.category === this.selectedFilter)
+    }
+  },
+  methods: {
+    handleAudioPlay(event, audioId) {
+      // Si un autre audio est en train de jouer, l'arrêter
+      if (this.currentPlayingAudio && this.currentPlayingAudio !== event.target) {
+        this.currentPlayingAudio.pause()
+        this.currentPlayingAudio.currentTime = 0 // Remettre au début
+      }
+      // Définir le nouvel audio comme celui qui joue
+      this.currentPlayingAudio = event.target
+    },
+    handleAudioEnded() {
+      // Quand l'audio se termine, réinitialiser
+      this.currentPlayingAudio = null
+    },
+    // Méthode pour gérer le clic sur les contrôles audio
+    handleAudioClick(event) {
+      const audio = event.target
+      if (audio.paused) {
+        // Si on clique sur un audio qui n'est pas celui qui joue
+        if (this.currentPlayingAudio && this.currentPlayingAudio !== audio) {
+          this.currentPlayingAudio.pause()
+          this.currentPlayingAudio.currentTime = 0
+        }
+        audio.play()
+      } else {
+        // Si on clique sur l'audio qui joue, le mettre en pause
+        audio.pause()
+        audio.currentTime = 0
+        this.currentPlayingAudio = null
+      }
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const audioElements = this.$el.querySelectorAll('audio')
+      audioElements.forEach((audio, index) => {
+        audio.id = `audio-${index}`
+        // Écouter l'événement play pour gérer la lecture exclusive
+        audio.addEventListener('play', (event) => this.handleAudioPlay(event, audio.id))
+        // Écouter la fin de l'audio pour réinitialiser
+        audio.addEventListener('ended', () => this.handleAudioEnded())
+        // Ajouter un écouteur de clic pour un meilleur contrôle
+        audio.addEventListener('click', (event) => this.handleAudioClick(event))
+      })
+    })
+  },
+  beforeUnmount() {
+    const audioElements = this.$el.querySelectorAll('audio')
+    audioElements.forEach(audio => {
+      audio.removeEventListener('play', this.handleAudioPlay)
+      audio.removeEventListener('ended', this.handleAudioEnded)
+      audio.removeEventListener('click', this.handleAudioClick)
+    })
+  }
 }
 </script>
+
+<style scoped>
+.voice-card {
+  transition: all 0.3s ease;
+}
+
+.voice-card:hover {
+  transform: translateY(-5px);
+}
+
+.audio-player {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.filter-btn {
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+</style>
+                                                  
+                                                                                                                                                                  
